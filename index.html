@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>FlowSight AI</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="topbar">
+    <div>
+      <h1>FlowSight AI</h1>
+      <p>Predictive Treasury Intelligence</p>
+    </div>
+
+    <div class="status">
+      ● AI Monitoring Active
+    </div>
+  </div>
+
+  <div class="cards" id="cards"></div>
+
+  <div class="chart-box">
+    <canvas id="chart"></canvas>
+  </div>
+
+  <div class="grid">
+
+    <div class="panel">
+      <h2>Liquidity Alerts</h2>
+      <div id="alerts"></div>
+    </div>
+
+    <div class="panel">
+      <h2>AI Recommendations</h2>
+      <div id="recs"></div>
+    </div>
+
+  </div>
+  <div class="score-card">
+    <h2>Treasury Health Score</h2>
+    <div id="score">82/100</div>
+</div>
+
+<div class="actions">
+
+    <button onclick="runForecast()">
+        Run AI Forecast
+    </button>
+
+    <button onclick="simulateDelay()">
+        Simulate SWIFT Delay
+    </button>
+
+    <button onclick="optimizeLiquidity()">
+        Optimize Liquidity
+    </button>
+
+</div>
+
+<div class="panel transfer-panel">
+
+    <h2>Liquidity Transfer Simulator</h2>
+
+    <select id="fromAccount">
+        <option>USD Operations</option>
+        <option>EUR Settlement</option>
+    </select>
+
+    <select id="toAccount">
+        <option>KZT Reserve</option>
+        <option>Crypto Liquidity</option>
+    </select>
+
+    <input type="number" id="amount" placeholder="Amount">
+
+    <button onclick="makeTransfer()">
+        Execute Transfer
+    </button>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
+
+
